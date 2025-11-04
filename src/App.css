@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* ? oogle font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ? library  */
+
+p,
+button,
+li,
+h1,
+h2,
+h3,
+h4,
+span,
+b {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* ? root */
+
+:root {
+   
+    --border-1: border: 1px solid black;
+    /* ? colors */
+    /* --primary-color: #2563eb; */
+    --gray-color: rgb(77, 76, 76);
+    --primary-color: rgb(4, 179, 4);
+    --color-white: white;
+    --color-black: black;
+    
+    /* ? fonts */
+    --font-size-18: 18px;
+    --font-size-20: 20px;
+    --font-size-25: 25px;
+    --font-size-30: 30px;
+    --font-size-40: 40px;
+    --font-size-50: 50px;
+    /* ? font weight */
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+    /* ? gap */
+    --gap-10: 10px;
+    --gap-20: 20px;
+    --gap-30: 30px;
+    --gap-40: 40px;
+    --gap-50: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1{
+    font-size: var(--font-size-50);
 }
 
-.App-link {
-  color: #61dafb;
+p{
+    font-size: var(--font-size-20);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* cursor pointer */
+
+button,
+i,
+svg,
+li {
+    cursor: pointer;
 }
+
+
+
+/* ? max-width */
+.max-width{
+    max-width: 1300px;
+    margin: auto;
+
+}
+
+/* ? display */
+
+.display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ? gap */
+
+.gap-10{
+gap: var(--gap-10);
+}
+
+.gap-20{
+gap: var(--gap-20);
+}
+
+.gap-30{
+gap: var(--gap-30);
+}
+
+.gap-40{
+gap: var(--gap-40);
+}
+
+.gap-50{
+gap: var(--gap-50);
+}
+
+
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.none{
+    display: none;
+}
+
+.block{
+    display: block;
+}
+
+
+

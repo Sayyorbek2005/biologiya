@@ -1,0 +1,76 @@
+
+.first-card-title{
+    text-align: center;
+    color: var(--primary-color);
+    padding: 20px;
+    position: fixed;
+    top:20px;
+    left: 50px;
+    right: 50px;
+    z-index: 999;
+    background-color: rgba(173, 248, 196, 0.374);
+    backdrop-filter: blur(3px);
+    /* border: 1px solid var(--primary-color); */
+    border-radius: 100px;
+
+}
+
+.orqaga{
+    position: fixed;
+    top: 140px;
+    left:50px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 999;
+
+}
+.orqaga > p,i{
+    font-size: var(--font-size-25);
+    /* color: var(--gray-color); */
+
+}
+.orqaga > i{
+    font-size: var(--font-size-30);
+    color: var(--primary-color);
+}
+
+menu{
+    margin: 200px 0px 200px 0px;
+    
+}
+
+
+.menu-card{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(235, 235, 235, 0.881);
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    transition: all .4s ease;
+    cursor: pointer;
+    
+}
+.menu-card:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+.menu-card > img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-card > p{
+    font-size: var(--font-size-18) !important;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: gray;
+    
+}
