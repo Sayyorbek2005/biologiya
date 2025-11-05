@@ -1,0 +1,82 @@
+.max-width {
+  padding: 20px;
+}
+
+.pages-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.yomgir .pages-title > .orqaga{
+  left: 20px;
+}
+
+
+.display-flex.orqaga {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chuvalchang-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.img-zoom-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* image */
+.img-zoom-container img {
+  width: 320px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  display: block;
+  /* ensure pointer events work */
+  pointer-events: auto;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+/* lens (we set size in JS too) */
+.img-zoom-lens {
+  position: absolute;
+  border: 2px solid rgba(0,0,0,0.8);
+  background-color: rgba(255, 255, 255, 0.25);
+  cursor: crosshair;
+  z-index: 20;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  /* display controlled in JS (none/block) */
+}
+
+/* result (zoom window) */
+.img-zoom-result {
+  border: 2px solid #000;
+  width: 320px;
+  height: 320px;
+  margin-top: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Responsive tweak */
+@media (max-width: 800px) {
+  .img-zoom-container img,
+  .img-zoom-result {
+    width: 260px;
+    height: 260px;
+  }
+}

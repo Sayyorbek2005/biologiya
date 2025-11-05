@@ -17,6 +17,7 @@ function App() {
   return (
     <div className="App">
       {/* ? Routes */}
+
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/FirstCard" element={<FirstCard />} />
@@ -29,6 +30,7 @@ function App() {
         <Route path="/Yomgir" element={<Yomgir />} />
         <Route path="/Zambrug" element={<Zambrug />} />
       </Routes>
+      
     </div>
   );
 }

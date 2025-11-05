@@ -15,7 +15,7 @@ const Dashboard = () => {
 
   
   return (
-    <div className='dashboard'>
+    <div className='dashboard' data-aos="fade-left">
       <div className="max-width">
 
 {/* ? header */}

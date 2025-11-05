@@ -13,6 +13,8 @@ import eight from '../../assets/7-sinf/tufelka.jpg';
 const FirstCard = () => {
   const navigate = useNavigate();
   return (
+    <div className="firs-card" data-aos="fade-left">
+
     <div className='max-width'>
       <div className="first-card-nav">
 
@@ -46,10 +48,10 @@ const FirstCard = () => {
           </div>
         </NavLink>
 
-        <NavLink to="/Osimliklarda">
-          <div className="menu-card card-3">
-            <img src={three} alt="three" />
-            <p className="descript">O'simlik to'qimasidan vaqtinchalik preparat tayyorlash</p>
+        <NavLink to="/Yomgir">
+          <div className="menu-card card-6">
+            <img src={three} alt="six" />
+            <p className="descript">Yomg'ir chuvalchangining ichki va tashqi tuzilishi bilan tanishish</p>
           </div>
         </NavLink>
 
@@ -66,13 +68,13 @@ const FirstCard = () => {
             <p className="descript">O'simliklarda moddalar transportini o'rganish</p>
           </div>
         </NavLink>
-
-        <NavLink to="/Yomgir">
-          <div className="menu-card card-6">
-            <img src={six} alt="six" />
-            <p className="descript">Yomg'ir chuvalchangining ichki va tashqi tuzilishi bilan tanishish</p>
+        <NavLink to="/Osimliklarda">
+          <div className="menu-card card-3">
+            <img src={six} alt="three" />
+            <p className="descript">O'simlik to'qimasidan vaqtinchalik preparat tayyorlash</p>
           </div>
         </NavLink>
+
 
         <NavLink to="/Bargda">
           <div className="menu-card card-7">
@@ -89,6 +91,7 @@ const FirstCard = () => {
         </NavLink>
 
       </menu>
+    </div>
     </div>
   );
 };

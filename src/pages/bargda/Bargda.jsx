@@ -1,12 +1,26 @@
 import React from 'react'
+import { navigateavigate, useNavigate } from 'react-router-dom'
 
 const Bargda = () => {
+  const navigate = useNavigate()
   return (
     <div>
-        <h1>
-            bargda
-            
-        </h1>
+        <div className="max-width">
+
+    <div className="pages-title">
+
+      <h1>
+        labaratoria jihozlari bilan tanishish.
+          </h1>      
+      <div onClick={() => navigate(-1)} className='display-flex orqaga'>
+    <i class='bx bx-chevron-left'></i>
+      <p>
+        orqaga
+      </p>
+      </div>
+      </div>
+
+      </div>
       
     </div>
   )

@@ -1,0 +1,40 @@
+
+
+.katta .pages-title > .orqaga{
+  left: 20px;
+}
+
+.img-zoom-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #000;
+  width: 100px;
+  height: 100px;
+  opacity: 0.4;
+  background-color: #fff;
+  cursor: crosshair;
+}
+
+.img-zoom-container > img{
+    width: 500px;
+    height: 500px;
+}
+
+
+.img-zoom-result {
+  border: 1px solid #000;
+  width: 500px;
+  height: 400px;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+}
+
+ol > li{
+    font-size: var(--font-size-20);
+}
