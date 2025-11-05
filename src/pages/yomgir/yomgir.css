@@ -24,7 +24,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 .img-zoom-container {
@@ -37,7 +37,7 @@
 /* image */
 .img-zoom-container img {
   width: 320px;
-  height: auto;
+  height: 400px;
   border-radius: 10px;
   border: 2px solid #ccc;
   display: block;

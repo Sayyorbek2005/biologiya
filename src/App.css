@@ -131,3 +131,35 @@ gap: var(--gap-50);
 
 
 
+
+/* ? side bar  */
+
+.side-bar{
+    padding: 20px;
+    background-color: rgba(173, 248, 196, 0.374);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    left: 0px;
+    top: 0;
+    bottom: 0px;
+    max-width: 270px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column; 
+    max-height: 100vh; 
+    overflow-y: auto; 
+    
+}
+
+.side-bar > div{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    background-color: var(--color-white);
+
+}
+.side-bar > div > img {
+    width: 100%;
+}

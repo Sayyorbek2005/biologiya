@@ -62,7 +62,7 @@ const Katta = () => {
 
     <div className="max-width" data-aos="fade-left">
       <div className="pages-title">
-        <h1>Labaratoria jihozlari bilan tanishish</h1>
+        <h1>Mikroskopning tuzilishi bilan tanishish</h1>
         <div onClick={() => navigate(-1)} className="display-flex orqaga">
           <i className="bx bx-chevron-left"></i>
           <p>orqaga</p>
