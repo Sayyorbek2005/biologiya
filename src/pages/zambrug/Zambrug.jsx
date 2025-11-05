@@ -31,7 +31,7 @@ const Zambrug = () => {
   };
 
   return (
-    <div>
+    <div data-aos="fade-down">
       <div className="max-width">
         <div className="pages-title zambrug">
           <h1>Zamburug' hujayrasining tuzilishini mikroskop ostida kuzatish</h1>

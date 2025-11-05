@@ -61,7 +61,7 @@ const Labaratoria = () => {
 
     const navigate = useNavigate();
   return (
-    <div className='labaratoria' >
+    <div className='labaratoria' data-aos="fade-down" >
       <div className="max-width">
 
     <div className="pages-title">

@@ -33,7 +33,7 @@ const Osimlik = () => {
       setOpenIndex(openIndex === index ? null : index);
     };
   return (
-    <div>
+    <div data-aos="fade-down">
  <div className="max-width">
 
     <div className="pages-title osimlik">

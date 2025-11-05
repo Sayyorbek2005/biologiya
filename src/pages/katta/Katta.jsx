@@ -58,9 +58,9 @@ const Katta = () => {
   }, []);
 
   return (
-    <div className="katta">
+    <div className="katta" data-aos="fade-down">
 
-    <div className="max-width" data-aos="fade-left">
+    <div className="max-width">
       <div className="pages-title">
         <h1>Mikroskopning tuzilishi bilan tanishish</h1>
         <div onClick={() => navigate(-1)} className="display-flex orqaga">
