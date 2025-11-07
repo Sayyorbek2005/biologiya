@@ -123,13 +123,13 @@ const Yomgir = () => {
         </div>
       </div>
 
-      <div className="chuvalchang-container">
+      <div className="chuvalchang-container ch-c-1">
         <div className="img-zoom-container">
           <img ref={imgRef1} src={chuvalchang} alt="Chuvalchang tashqi" />
           <div ref={resultRef1} className="img-zoom-result" />
         </div>
 
-        <div className="img-zoom-container">
+        <div className="img-zoom-container ch-c-2">
           <img ref={imgRef2} src={chuvalchangIch} alt="Chuvalchang ichki" />
           <div ref={resultRef2} className="img-zoom-result" />
         </div>

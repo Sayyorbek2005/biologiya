@@ -80,3 +80,15 @@
     height: 260px;
   }
 }
+
+
+
+.ch-c-1, .ch-c-2{
+  position: absolute;
+
+}
+
+.ch-c-2{
+    position: absolute;
+    top: 500px;
+}

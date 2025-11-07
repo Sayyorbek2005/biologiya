@@ -1,4 +1,8 @@
 
+.cont-zambrug{
+    height: 100%;
+}
+
 .zambrug > .orqaga{
     top: 270px;
 }
@@ -104,4 +108,128 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+/* ? animation */
+/* Umumiy sozlamalar */
+.animation-area {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.accordion-container img{
+    width: 200px;
+    object-fit: contain;
+    height: 250px;
+}
+
+.animation-area img {
+  transition: all 1s ease;
+  opacity: 1;
+}
+
+/* Chapdagi rasm */
+.left-img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* O'ngdagi rasm */
+.right-img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Animatsiyalar */
+.animation-area.active .left-img {
+  animation: moveLeft 1s forwards, fadeOut 0.5s 1s forwards;
+}
+
+.animation-area.active .right-img {
+  animation: moveRight 1s forwards, fadeOut 0.5s 1s forwards;
+}
+
+@keyframes moveLeft {
+  to {
+    top: 60%;
+    left: 60%;
+    transform: translate(-100%, -50%);
+  }
+}
+
+@keyframes moveRight {
+  to {
+    top: 40%;
+    right: 60%;
+    transform: translate(100%, -50%);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+/* Natija rasmi (o‘rtada chiqadi) */
+.result-img {
+  width: 300px;
+  opacity: 0;
+  animation: appear 0.5s 1.5s forwards;
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Tugmalar */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.zambrug-cont-btn {
+  background: #4b6cb7;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.zambrug-cont-btn:hover {
+  background: #182848;
+}
+
+/* Sidebar skroll */
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.side-bar::-webkit-scrollbar {
+  width: 8px;
+}
+.side-bar::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 5px;
 }

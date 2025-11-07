@@ -68,7 +68,9 @@ const Katta = () => {
           <p>orqaga</p>
         </div>
       </div>
-<div className="display-flex">
+
+
+<div className="display-flex bar-mik-zoom">
 
       <div className="img-zoom-container">
         

@@ -29,12 +29,19 @@
 
 .img-zoom-result {
   border: 1px solid #000;
-  width: 500px;
-  height: 400px;
+  width: 600px;
+  height: 500px;
   background-repeat: no-repeat;
   margin-top: 20px;
+  position: absolute;
+  top: 30px;
+  left: 400px;
 }
 
 ol > li{
-    font-size: var(--font-size-20);
+    font-size: var(--font-size-25);
+}
+
+.bar-mik-zoom{
+  position: relative;
 }
