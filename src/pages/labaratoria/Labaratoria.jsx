@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Flex, Modal } from 'antd';
+import { Flex, Modal } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import './labaratoria.css';
 
@@ -79,7 +79,6 @@ const Labaratoria = () => {
         title={tanlanganJihoz?.title}
         centered
         open={openModal}
-        onOk={() => setOpenModal(false)}
         onCancel={() => setOpenModal(false)}
         footer={null}
         width={600}
@@ -91,9 +90,7 @@ const Labaratoria = () => {
               alt={tanlanganJihoz.title}
               style={{ width: '70%', marginBottom: '20px' }}
             />
-            <h2>
-              {tanlanganJihoz.title}
-            </h2>
+            <h2>{tanlanganJihoz.title}</h2>
           </div>
         )}
       </Modal>
